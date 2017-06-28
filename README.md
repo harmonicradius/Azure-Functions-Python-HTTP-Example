@@ -1,6 +1,6 @@
 ![Azure Functions + Python HTTP](http://mediarealm.com.au/wp-content/uploads/2016/05/Azure-Functions-Python-HTTP.png)
 
-# Azure Functions + Python HTTP Example Code With Requests
+# HomeRun Checker Azure Function + Python HTTP Example Code With Requests 
 *Example code for Azure Functions (written in Python).*
 
 This example code is designed to demonstrate how to use Azure Functions with Python for HTTP Triggers. It demonstrates:
