@@ -9,6 +9,7 @@ import json
 
 request = requests.get("http://gd2.mlb.com/components/game/mlb/notifications.json")
 data = request.json()
+body={}
 
 if 'pbp' in data['data']['alerts']['last_pbp']:
     notifications = data['data']['alerts']['last_pbp']['pbp']
@@ -17,7 +18,6 @@ if 'pbp' in data['data']['alerts']['last_pbp']:
         if "home run" in x['text'].split(" "):
             body.append(x)
     else:
-        body={}
         body['text'] = "No Home Runs"
 
 # All data to be returned to the client gets put into this dict
