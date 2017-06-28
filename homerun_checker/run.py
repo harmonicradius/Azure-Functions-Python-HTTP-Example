@@ -17,8 +17,8 @@ if 'pbp' in data['data']['alerts']['last_pbp']:
     for x in notifications:
         if "home run" in x['text'].split(" "):
             body.append(x)
-    else:
-        body['text'] = "No Home Runs"
+else:
+    body['text'] = "No Home Runs"
 
 # All data to be returned to the client gets put into this dict
 returnData = {
