@@ -10,7 +10,7 @@ import json
 request = requests.get("http://gd2.mlb.com/components/game/mlb/notifications.json")
 data = request.json()
 
-if 'pbp' in data['data']['last_pbp']:
+if 'pbp' in data['data']['alerts']['last_pbp']:
     notifications = data['data']['alerts']['last_pbp']['pbp']
 
     for x in notifications:
